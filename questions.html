@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Add the HTML elements here -->
+    <select id="personas"></select>
+    <div id="questions"></div>
+
+    <!-- Include other scripts here -->
+
+    <script>
+        function fetchData(endpoint) {
+            return fetch(endpoint)
+                .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            });
+        }
+    </script>
+    <script src="app.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+

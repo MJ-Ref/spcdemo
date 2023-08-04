@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#managers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#managers div {
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+}

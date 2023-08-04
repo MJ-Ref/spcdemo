@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Your HTML code here... -->
+    <script>
+        function fetchData(endpoint) {
+            return fetch(endpoint)
+                .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            });
+        }
+    </script>
+    <script src="app.js"></script>
+    <!-- Include other scripts here -->
+</body>
+</html>
+
+
+
+
